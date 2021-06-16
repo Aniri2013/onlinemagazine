@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load category_template_tags %}
+{% load slide_template_tags %}
+{% block content %}
+<style>
+	/*[ Block2 ]
+///////////////////////////////////////////////////////////
+*/
+.block2-labelpromotion::before,
+.block2-labelsale::before,
+.block2-labelnew::before 
+{
+  z-index: 100;
+  font-family: Montserrat-Regular;
+  font-size: 12px;
+  color: white;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 22px;
+  border-radius: 11px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.block2-labelsale::before {
+  background-color: white;
+  color: #000;
+  content: 'Sale';
+}
+
+.block2-labelnew::before {
+  background-color: #007bff;
+  content: 'New';
+}
+
+.block2-labelpromotion::before{
+	background-color: #000;
+	content: 'Promotion';
+	width: 70px;
+  }
+
+  .btn-dark {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+}
+
+.btn-outline-dark {
+    color: #000;
+    border-color: #000;
+}
+
+
+</style>
+
+	<!-- Slide1 -->
+
+			</div>
+	</section>
+
+	<!-- Category start -->
+			</div>
+		</div>
+	</section>
+
+	</section>
+
+<h1 style="text-align:center"><strong><span style="font-size:36px"><span style="font-family:Comic Sans MS,cursive">О НАС</span></span></strong></h1>
+
+<p style="text-align:center"><strong><span style="font-size:16px"><span style="font-family:Courier New,Courier,monospace"><em>Аренда костюмов</em></span></span></strong></p>
+
+{% endblock content %}
